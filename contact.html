@@ -2,65 +2,121 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Contact | Your Name</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Darlene Holland Repo</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<style>
+  body { padding-top: 70px; 
+    background-image: url("assets/images/background color husk_@2X.png");
+      }
+</style>
+
 </head>
 
 <body>
 
   <header id="masthead">
+      <style>
+          #logo {
+                      background-color: #4aaaa5;
+                      color: white;
+                      margin: 0px;
+                      padding-top: 20px;
+                      padding-bottom: 15px;
+                      margin-bottom: 10px;
+                      position: relative;
+                }
+        </style>
+ 
     <div class="container">
-      <a href="index.html" id="logo">Your Name</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
+      
+        <nav class="navbar navbar-default navbar-fixed-top" style="padding:10px; background-color:white">
+            <div class="container">
+              <a href="index.html" id="logo" style="font-size:40px">Darlene Holland</a>
+              <div class='navigation' style="float:right; padding-top:20px">
+                <a href="index.html" style="padding-right:10px; font-size:20px ; color:#666666">About</a>
+                <a href="portfolio.html" style="padding-right:10px; font-size:20px ; color:#666666">Portfolio</a>
+                <a href="contact.html" style="padding-right:10px; font-size:20px; color:#666666">Contact</a>
+              </div>
+            </div>
+        </nav>
+  </div>
+      
   </header>
 
+
+<div class="row" style="padding:70px">
   <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Contact</h1>
+      <div class="col-sm-8">
+    <section class="main-bio" style="width:100%">
+      <style>
+            .main-bio {
+                border: 1px solid #dddddd;
+                background-color: #ffffff;
+                color: #777777;
+                float: left;
+                padding: 20px
+            }
+        </style>
+        
+      <h1 style="color: #4aaaa5;  margin-bottom: 20px; border-bottom:2px solid rgba(223, 223, 214, 0.932)">Contact</h1>
 
-      <form id="contact-form">
-        <ul>
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
+      
+      <form> 
+          Name<br>
+          <input class="form-control" type="text" name="name" placeholder="John Smith"><br>
+          Email<br>
+          <input class="form-control" type="text" name="email" placeholder="example@gmail.com"><br>
+          Message<br>
+          <textarea class="form-control" name="message" style="height:150px"></textarea> <br>
+          <input class="form-control" type="submit">
       </form>
-
     </section>
-
+  </div>
+    <div class="col-sm-4">  
     <section class="sidebar">
-      <div id="connect">
-        <h2>Connect with Me</h2>
-
-        <a href="#"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
-        <a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
-        <a href="#"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
+      <div id="contact-info">
+        <style>
+            #contact-info {
+                width: 300px;
+                float: right;
+                border: 1px solid white;
+                background-color: #ffffff;
+                padding: 20px;
+            }
+          </style>
+        <h2 style="color: #4aaaa5;  margin-bottom: 20px; border-bottom:2px solid rgba(223, 223, 214, 0.932)">Connect with Me</h2>
+        <a href="https://www.linkedin.com/in/darlene-holland-a2608876/"><img src="/Users/darlene/Desktop/Coding Bootcamp/Repo/Bootstrap-Portfolio/assets/images/linkedin-128.png" class="contact-image" style="width:80px"></a>
+        <a href="https://github.com/dsemoin"><img src="/Users/darlene/Desktop/Coding Bootcamp/Repo/Bootstrap-Portfolio/assets/images/github-128.png" class="contact-image" style="width:80px"></a> 
+        <a href="https://stackoverflow.com/users/9241474/darlene-holland"><img src="/Users/darlene/Desktop/Coding Bootcamp/Repo/Bootstrap-Portfolio/assets/images/stackoverflow-128.png" class="contact-image" style="width:80px"></a>
+      </div>
       </div>
     </section>
   </div>
+</div>
 
   <footer>
+    <style>
+      footer {
+                clear: both;
+                background-color:#666666;
+                padding: 30px;
+                text-align: center;
+                margin-top: 20px;
+    </style>
     <div class="container">
       Copyright &copy; 
     </div>
   </footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
+
