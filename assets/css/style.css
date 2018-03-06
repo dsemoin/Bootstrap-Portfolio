@@ -237,3 +237,46 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+  .container {
+    padding-left: 20px;
+  }
+  .navigation {
+    float:none;
+    width: 640px;
+    padding-left: 20px;
+    margin-right: 0px;
+  }
+  .navigation > li {
+    margin-left: 20px;
+    margin-right: 0px;
+  }
+  #main-bio {
+    width: 640px;
+  }
+  #bio-image  {
+      padding-right: 20px;
+      width: 440px;
+      height: 440px;
+  }
+  #contact-info {
+      float: none;
+      clear: both;
+      width: 640px;
+      margin-top: 60px;
+  }
+}
+ 
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { 
+
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { 
+
+ }
