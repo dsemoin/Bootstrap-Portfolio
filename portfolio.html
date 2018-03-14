@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="stylesheet" href="assets/css/style.css">
   <title>Darlene Holland Repo</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <style>
-  body { padding-top: 70px; 
+  body { 
     background-image: url("assets/images/background color husk_@2X.png");
       }
 </style>
@@ -20,69 +20,24 @@
 
 <body>
 
-  <header id="masthead">
-      <style>
-          #logo {
-                      background-color: #4aaaa5;
-                      color: white;
-                      margin: 0px;
-                      padding-top: 20px;
-                      padding-bottom: 15px;
-                      margin-bottom: 10px;
-                      position: relative;
-                }
-        </style>
- 
-    <div class="container">
-      
-        <nav class="navbar navbar-default navbar-fixed-top" style="padding:10px; background-color:white">
-            <div class="container">
-              <a href="index.html" id="logo" style="font-size:40px">Darlene Holland</a>
-              <div class='navigation' style="float:right; padding-top:20px">
-                <a href="index.html" style="padding-right:10px; font-size:20px ; color:#666666">About</a>
-                <a href="portfolio.html" style="padding-right:10px; font-size:20px ; color:#666666">Portfolio</a>
-                <a href="contact.html" style="padding-right:10px; font-size:20px; color:#666666">Contact</a>
-              </div>
-            </div>
-        </nav>
-  </div>
-      
-  </header>
+  <div class="container-fluid">
+      <header class="header">
+          <div class="row">
+            <h1 class="col-sm-4">Darlene Holland</h1>
+            <nav class="col-sm-8 text-right">
+               <a href="index.html" style="padding-right:10px; font-size:20px ; color:#fff">About</a>
+              <a href="portfolio.html" style="padding-right:10px; font-size:20px ; color:#fff">Portfolio</a>
+              <a href="contact.html" style="padding-right:10px; font-size:20px; color:#fff">Contact</a>
+            </nav>
+           </div>
+         </header>
 
-
-<div class="row" style="padding:70px">
+<div class="row" style="padding:0px">
   <div id="main-container" class="container">
       <div class="col-sm-8">
     <section class="main-bio">
-      <style>
-            .main-bio {
-                border: 1px solid #dddddd;
-                background-color: #ffffff;
-                color: #777777;
-                float: left;
-                padding: 20px
-            }
-        </style>
-        
+  
       <h1 style="color: #4aaaa5;  margin-bottom: 20px; border-bottom:2px solid rgba(223, 223, 214, 0.932)">About Me</h1>
-      <style>
-      .portfolio-image {
-                float: left;
-                padding: 10px;
-                position: relative;
-            }
-            .tag {
-    background-color: #4c9cdd;
-    color: white;
-    position: absolute;
-    z-index: 100;
-    width: 216px;
-    top: 130px;
-    padding: 10px 2px 10px 2px;
-    text-align: center;
-}
-      </style>
-      
             <div class="portfolio-image">
                     <a href="https://dsemoin.github.io/week-4-game/"><div class="tag">Crystal Collectors Game</div></a>
                 <img src="assets/images/crystals collector game.png" alt="Owl Placeholder">
@@ -97,8 +52,8 @@
                 <img src="assets/images/giphy .png" alt="Owl Placeholder">
             </div>
             <div class="portfolio-image">
-                    <div class="tag">Owl placeholder</div>
-                <img src="assets/images/Owl for place holder.jpg" alt="Owl Placeholder">
+                <a href="https://dsemoin.github.io/Train-Scheduler/"><div class="tag">Train Scheduler</div>
+                <img src="assets/images/train-scheduler.png" alt="Owl Placeholder">
             </div>
             <div class="portfolio-image">
                 <div class="tag">Owl placeholder</div>
@@ -111,16 +66,6 @@
     <div class="col-sm-4">  
     <section class="sidebar">
       <div id="contact-info">
-        <style>
-            #contact-info {
-                width: 300px;
-                float: right;
-                border: 1px solid white;
-                background-color: #ffffff;
-                padding: 20px;
-                margin: 60px;
-            }
-          </style>
         <h2 style="color: #4aaaa5;  margin-bottom: 20px; border-bottom:2px solid rgba(223, 223, 214, 0.932)">Connect with Me</h2>
         <a href="https://www.linkedin.com/in/darlene-holland-a2608876/"><img src="assets/images/linkedin-128.png" class="contact-image" style="width:80px"></a>
         <a href="https://github.com/dsemoin"><img src="assets/images/github-128.png" class="contact-image" style="width:80px"></a> 
@@ -132,16 +77,7 @@
 </div>
 
   <footer>
-    <style>
-      footer {
-                clear: both;
-                background-color:#666666;
-                padding: 30px;
-                text-align: center;
-                margin-top: 20px;
-      }
-    </style>
-    <div class="container">
+    <div class="container-fluid">
       Copyright &copy; 
     </div>
   </footer>
@@ -153,41 +89,16 @@
 
 </html>
 
-<script>
-/* Small devices (landscape phones, 600px and up) */
-[class*="col-"]{
-  width: 100%;
-}
-@media (min-width: 600px) 
- { 
-   /* For tablets: */
-   
-    .col-m-4 {width: 33.33%;}
-    .col-m-8 {width: 66.66%;}
-   
-
-}
-
+<style>
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {} 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-}
+@media (min-width: 768px) {}
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {}
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}  
-</script>
+@media (min-width: 1200px) {}   
+
+</style>
